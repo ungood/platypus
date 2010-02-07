@@ -41,9 +41,15 @@ struct ring_buffer {
 
 ring_buffer rx_buffer = { { 0 }, 0, 0 };
 
-#if defined(__AVR_ATmega1280__)
+#if NUM_HWSERIAL > 1
 ring_buffer rx_buffer1 = { { 0 }, 0, 0 };
+#endif
+
+#if NUM_HWSERIAL > 2
 ring_buffer rx_buffer2 = { { 0 }, 0, 0 };
+#endif
+
+#if NUM_HWSERIAL > 3
 ring_buffer rx_buffer3 = { { 0 }, 0, 0 };
 #endif
 
@@ -61,7 +67,19 @@ inline void store_char(unsigned char c, ring_buffer *rx_buffer)
   }
 }
 
-#if defined(__AVR_ATmega1280__)
+#if defined(__AVR_ATmega8__)
+SIGNAL(SIG_UART_RECV)
+{
+  unsigned char c = UDR;
+  store_char(c, &rx_buffer);
+}
+#elif NUM_HWSERIAL == 1
+SIGNAL(USART_RX_vect)
+{
+  unsigned char c = UDR0;
+  store_char(c, &rx_buffer);
+}
+#else
 
 SIGNAL(SIG_USART0_RECV)
 {
@@ -75,33 +93,21 @@ SIGNAL(SIG_USART1_RECV)
   store_char(c, &rx_buffer1);
 }
 
+#if NUM_HWSERIAL > 2
 SIGNAL(SIG_USART2_RECV)
 {
   unsigned char c = UDR2;
   store_char(c, &rx_buffer2);
 }
+#endif
 
+#if NUM_HWSERIAL > 3
 SIGNAL(SIG_USART3_RECV)
 {
   unsigned char c = UDR3;
   store_char(c, &rx_buffer3);
 }
-
-#else
-
-#if defined(__AVR_ATmega8__)
-SIGNAL(SIG_UART_RECV)
-#else
-SIGNAL(USART_RX_vect)
 #endif
-{
-#if defined(__AVR_ATmega8__)
-  unsigned char c = UDR;
-#else
-  unsigned char c = UDR0;
-#endif
-  store_char(c, &rx_buffer);
-}
 
 #endif
 
@@ -219,8 +225,11 @@ HardwareSerial Serial(&rx_buffer, &UBRRH, &UBRRL, &UCSRA, &UCSRB, &UDR, RXEN, TX
 HardwareSerial Serial(&rx_buffer, &UBRR0H, &UBRR0L, &UCSR0A, &UCSR0B, &UDR0, RXEN0, TXEN0, RXCIE0, UDRE0, U2X0);
 #endif
 
-#if defined(__AVR_ATmega1280__)
+#if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega1281__)
 HardwareSerial Serial1(&rx_buffer1, &UBRR1H, &UBRR1L, &UCSR1A, &UCSR1B, &UDR1, RXEN1, TXEN1, RXCIE1, UDRE1, U2X1);
+#endif
+
+#if defined(__AVR_ATmega1280__)
 HardwareSerial Serial2(&rx_buffer2, &UBRR2H, &UBRR2L, &UCSR2A, &UCSR2B, &UDR2, RXEN2, TXEN2, RXCIE2, UDRE2, U2X2);
 HardwareSerial Serial3(&rx_buffer3, &UBRR3H, &UBRR3L, &UCSR3A, &UCSR3B, &UDR3, RXEN3, TXEN3, RXCIE3, UDRE3, U2X3);
 #endif

@@ -24,6 +24,14 @@
 
 #include "Print.h"
 
+#if defined(__AVR_ATmega1280__)
+#define NUM_HWSERIAL 4
+#elif defined(__AVR_ATmega1281__)
+#define NUM_HWSERIAL 2
+#else
+#define NUM_HWSERIAL 1
+#endif
+
 struct ring_buffer;
 
 class HardwareSerial : public Print
@@ -57,9 +65,15 @@ class HardwareSerial : public Print
 
 extern HardwareSerial Serial;
 
-#if defined(__AVR_ATmega1280__)
+#if NUM_HWSERIAL > 1
 extern HardwareSerial Serial1;
+#endif
+
+#if NUM_HWSERIAL > 2
 extern HardwareSerial Serial2;
+#endif 
+
+#if NUM_HWSERIAL > 3
 extern HardwareSerial Serial3;
 #endif
 

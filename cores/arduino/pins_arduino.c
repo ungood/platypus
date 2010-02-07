@@ -398,56 +398,54 @@ const uint8_t PROGMEM digital_pin_to_port_PGM[] = {
 	PD	, //  3 ** PD 3 ** USART1_TX
 	PD	, //  4 ** PD 1 ** TWI_SDA
 	PD	, //  5 ** PD 0 ** TWI_SCL
-	PD	, //  6 ** PD 0 ** DUPLICATE - RESERVED FOR LATER USE
-	PD	, //  7 ** PD 1 ** DUPLICATE - RESERVED FOR LATER USE
-	PE	, //  8 ** PE 4 ** PWM4
-	PE	, //  9 ** PE 5 ** PWM5
-	PG	, // 10 ** PG 5 ** PWM6
-	PE	, // 11 ** PE 3 ** PWM7
-	PB	, // 12 ** PB 4 ** PWM8
-	PB	, // 13 ** PB 5 ** PWM9
-	PB	, // 14 ** PB 6 ** PWM10
-	PB	, // 15 ** PB 7 ** PWM11
-	PA	, // 16 ** PA 0 ** D16
-	PA	, // 17 ** PA 1 ** D17
-	PA	, // 18 ** PA 2 ** D18
-	PA	, // 19 ** PA 3 ** D19
-	PA	, // 20 ** PA 4 ** D20
-	PA	, // 21 ** PA 5 ** D21
-	PA	, // 22 ** PA 6 ** D22
-	PA	, // 23 ** PA 7 ** D23
-	PC	, // 24 ** PC 0 ** D24
-	PC	, // 25 ** PC 1 ** D25
-	PC	, // 26 ** PC 2 ** D26
-	PC	, // 27 ** PC 3 ** D27
-	PC	, // 28 ** PC 4 ** D28
-	PC	, // 29 ** PC 5 ** D29
-	PC	, // 30 ** PC 6 ** D30
-	PC	, // 31 ** PC 7 ** D31
-	PE	, // 32 ** PE 2 ** D32
-	PE	, // 33 ** PE 6 ** D33
-	PE	, // 34 ** PE 7 ** D34
-	PD	, // 35 ** PD 4 ** D35
-	PD	, // 36 ** PD 5 ** D36
-	PD	, // 37 ** PD 6 ** D37
-	PD	, // 38 ** PD 7 ** D38
-	PG	, // 39 ** PG 0 ** D39
-	PG	, // 40 ** PG 1 ** D40
-	PG	, // 41 ** PG 2 ** D41
-	PG	, // 42 ** PG 3 ** D42
-	PG	, // 43 ** PG 4 ** D43
-	PB	, // 44 ** PB 0 ** D44
-	PB	, // 45 ** PB 1 ** D45
-	PB	, // 46 ** PB 2 ** D46
-	PB	, // 47 ** PB 3 ** D47
-	PF	, // 48 ** PF 0 ** A0
-	PF	, // 49 ** PF 1 ** A1
-	PF	, // 50 ** PF 2 ** A2
-	PF	, // 51 ** PF 3 ** A3
-	PF	, // 52 ** PF 4 ** A4
-	PF	, // 53 ** PF 5 ** A5
-	PF	, // 54 ** PF 6 ** A6
-	PF	, // 55 ** PF 7 ** A7
+	PE	, //  6 ** PE 4 ** PWM6
+	PE	, //  7 ** PE 5 ** PWM7
+	PG	, //  8 ** PG 5 ** PWM8
+	PE	, //  9 ** PE 3 ** PWM9
+	PB	, // 10 ** PB 4 ** PWM10
+	PB	, // 11 ** PB 5 ** PWM11
+	PB	, // 12 ** PB 6 ** PWM12
+	PB	, // 13 ** PB 7 ** PWM13
+	PA	, // 14 ** PA 0 ** D14
+	PA	, // 15 ** PA 1 ** D15
+	PA	, // 16 ** PA 2 ** D16
+	PA	, // 17 ** PA 3 ** D17
+	PA	, // 18 ** PA 4 ** D18
+	PA	, // 19 ** PA 5 ** D19
+	PA	, // 20 ** PA 6 ** D20
+	PA	, // 21 ** PA 7 ** D21
+	PC	, // 22 ** PC 0 ** D22
+	PC	, // 23 ** PC 1 ** D23
+	PC	, // 24 ** PC 2 ** D24
+	PC	, // 25 ** PC 3 ** D25
+	PC	, // 26 ** PC 4 ** D26
+	PC	, // 27 ** PC 5 ** D27
+	PC	, // 28 ** PC 6 ** D28
+	PC	, // 29 ** PC 7 ** D29
+	PE	, // 30 ** PE 2 ** D30
+	PE	, // 31 ** PE 6 ** D31
+	PE	, // 32 ** PE 7 ** D32
+	PD	, // 33 ** PD 4 ** D33
+	PD	, // 34 ** PD 5 ** D34
+	PD	, // 35 ** PD 6 ** D35
+	PD	, // 36 ** PD 7 ** D36
+	PG	, // 37 ** PG 0 ** D37
+	PG	, // 38 ** PG 1 ** D38
+	PG	, // 39 ** PG 2 ** D39
+	PG	, // 40 ** PG 3 ** D40
+	PG	, // 41 ** PG 4 ** D41
+	PB	, // 42 ** PB 0 ** D42
+	PB	, // 43 ** PB 1 ** D43
+	PB	, // 44 ** PB 2 ** D44
+	PB	, // 45 ** PB 3 ** D45
+	PF	, // 46 ** PF 0 ** A0
+	PF	, // 47 ** PF 1 ** A1
+	PF	, // 48 ** PF 2 ** A2
+	PF	, // 49 ** PF 3 ** A3
+	PF	, // 50 ** PF 4 ** A4
+	PF	, // 51 ** PF 5 ** A5
+	PF	, // 52 ** PF 6 ** A6
+	PF	, // 53 ** PF 7 ** A7
 };
 
 const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
@@ -459,56 +457,54 @@ const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
 	_BV(3)	, //  3 ** PD 3 ** USART1_TX
 	_BV(1)	, //  4 ** PD 1 ** TWI_SDA
 	_BV(0)	, //  5 ** PD 0 ** TWI_SCL
-	_BV(0)	, //  6 ** PD 0 ** DUPLICATE - RESERVED FOR LATER USE
-	_BV(1)	, //  7 ** PD 1 ** DUPLICATE - RESERVED FOR LATER USE
-	_BV(4)	, //  8 ** PE 4 ** PWM4
-	_BV(5)	, //  9 ** PE 5 ** PWM5
-	_BV(5)	, // 10 ** PG 5 ** PWM6
-	_BV(3)	, // 11 ** PE 3 ** PWM7
-	_BV(4)	, // 12 ** PB 4 ** PWM8
-	_BV(5)	, // 13 ** PB 5 ** PWM9
-	_BV(6)	, // 14 ** PB 6 ** PWM10
-	_BV(7)	, // 15 ** PB 7 ** PWM11
-	_BV(0)	, // 16 ** PA 0 ** D16
-	_BV(1)	, // 17 ** PA 1 ** D17
-	_BV(2)	, // 18 ** PA 2 ** D18
-	_BV(3)	, // 19 ** PA 3 ** D19
-	_BV(4)	, // 20 ** PA 4 ** D20
-	_BV(5)	, // 21 ** PA 5 ** D21
-	_BV(6)	, // 22 ** PA 6 ** D22
-	_BV(7)	, // 23 ** PA 7 ** D23
-	_BV(0)	, // 24 ** PC 0 ** D24
-	_BV(1)	, // 25 ** PC 1 ** D25
-	_BV(2)	, // 26 ** PC 2 ** D26
-	_BV(3)	, // 27 ** PC 3 ** D27
-	_BV(4)	, // 28 ** PC 4 ** D28
-	_BV(5)	, // 29 ** PC 5 ** D29
-	_BV(6)	, // 30 ** PC 6 ** D30
-	_BV(7)	, // 31 ** PC 7 ** D31
-	_BV(2)	, // 32 ** PE 2 ** D32
-	_BV(6)	, // 33 ** PE 6 ** D33
-	_BV(7)	, // 34 ** PE 7 ** D34
-	_BV(4)	, // 35 ** PD 4 ** D35
-	_BV(5)	, // 36 ** PD 5 ** D36
-	_BV(6)	, // 37 ** PD 6 ** D37
-	_BV(7)	, // 38 ** PD 7 ** D38
-	_BV(0)	, // 39 ** PG 0 ** D39
-	_BV(1)	, // 40 ** PG 1 ** D40
-	_BV(2)	, // 41 ** PG 2 ** D41
-	_BV(3)	, // 42 ** PG 3 ** D42
-	_BV(4)	, // 43 ** PG 4 ** D43
-	_BV(0)	, // 44 ** PB 0 ** D44
-	_BV(1)	, // 45 ** PB 1 ** D45
-	_BV(2)	, // 46 ** PB 2 ** D46
-	_BV(3)	, // 47 ** PB 3 ** D47
-	_BV(0)	, // 48 ** PF 0 ** A0
-	_BV(1)	, // 49 ** PF 1 ** A1
-	_BV(2)	, // 50 ** PF 2 ** A2
-	_BV(3)	, // 51 ** PF 3 ** A3
-	_BV(4)	, // 52 ** PF 4 ** A4
-	_BV(5)	, // 53 ** PF 5 ** A5
-	_BV(6)	, // 54 ** PF 6 ** A6
-	_BV(7)	, // 55 ** PF 7 ** A7
+	_BV(4)	, //  6 ** PE 4 ** PWM6
+	_BV(5)	, //  7 ** PE 5 ** PWM7
+	_BV(5)	, //  8 ** PG 5 ** PWM8
+	_BV(3)	, //  9 ** PE 3 ** PWM9
+	_BV(4)	, // 10 ** PB 4 ** PWM10
+	_BV(5)	, // 11 ** PB 5 ** PWM11
+	_BV(6)	, // 12 ** PB 6 ** PWM12
+	_BV(7)	, // 13 ** PB 7 ** PWM13
+	_BV(0)	, // 14 ** PA 0 ** D14
+	_BV(1)	, // 15 ** PA 1 ** D15
+	_BV(2)	, // 16 ** PA 2 ** D16
+	_BV(3)	, // 17 ** PA 3 ** D17
+	_BV(4)	, // 18 ** PA 4 ** D18
+	_BV(5)	, // 19 ** PA 5 ** D19
+	_BV(6)	, // 20 ** PA 6 ** D20
+	_BV(7)	, // 21 ** PA 7 ** D21
+	_BV(0)	, // 22 ** PC 0 ** D22
+	_BV(1)	, // 23 ** PC 1 ** D23
+	_BV(2)	, // 24 ** PC 2 ** D24
+	_BV(3)	, // 25 ** PC 3 ** D25
+	_BV(4)	, // 26 ** PC 4 ** D26
+	_BV(5)	, // 27 ** PC 5 ** D27
+	_BV(6)	, // 28 ** PC 6 ** D28
+	_BV(7)	, // 29 ** PC 7 ** D29
+	_BV(2)	, // 30 ** PE 2 ** D30
+	_BV(6)	, // 31 ** PE 6 ** D31
+	_BV(7)	, // 32 ** PE 7 ** D32
+	_BV(4)	, // 33 ** PD 4 ** D33
+	_BV(5)	, // 34 ** PD 5 ** D34
+	_BV(6)	, // 35 ** PD 6 ** D35
+	_BV(7)	, // 36 ** PD 7 ** D36
+	_BV(0)	, // 37 ** PG 0 ** D37
+	_BV(1)	, // 38 ** PG 1 ** D38
+	_BV(2)	, // 39 ** PG 2 ** D39
+	_BV(3)	, // 40 ** PG 3 ** D40
+	_BV(4)	, // 41 ** PG 4 ** D41
+	_BV(0)	, // 42 ** PB 0 ** D42
+	_BV(1)	, // 43 ** PB 1 ** D43
+	_BV(2)	, // 44 ** PB 2 ** D44
+	_BV(3)	, // 45 ** PB 3 ** D45
+	_BV(0)	, // 46 ** PF 0 ** A0
+	_BV(1)	, // 47 ** PF 1 ** A1
+	_BV(2)	, // 48 ** PF 2 ** A2
+	_BV(3)	, // 49 ** PF 3 ** A3
+	_BV(4)	, // 50 ** PF 4 ** A4
+	_BV(5)	, // 51 ** PF 5 ** A5
+	_BV(6)	, // 52 ** PF 6 ** A6
+	_BV(7)	, // 53 ** PF 7 ** A7
 };
 
 const uint8_t PROGMEM digital_pin_to_timer_PGM[] = {
@@ -520,56 +516,54 @@ const uint8_t PROGMEM digital_pin_to_timer_PGM[] = {
 		NOT_ON_TIMER	, //  3 ** PD 3 ** USART1_TX
 		NOT_ON_TIMER	, //  4 ** PD 1 ** TWI_SDA
 		NOT_ON_TIMER	, //  5 ** PD 0 ** TWI_SCL
-		NOT_ON_TIMER	, //  6 ** PD 0 ** DUPLICATE - RESERVED FOR LATER USE
-		NOT_ON_TIMER	, //  7 ** PD 1 ** DUPLICATE - RESERVED FOR LATER USE
-		TIMER3B			, //  8 ** PE 4 ** PWM4, TIMER3B
-		TIMER3C			, //  9 ** PE 5 ** PWM5, TIMER3C
-		TIMER0B			, // 10 ** PG 5 ** PWM6, TIMER0B
-		TIMER3A			, // 11 ** PE 3 ** PWM7, TIMER3A
-		TIMER2A			, // 12 ** PB 4 ** PWM8, TIMER2A
-		TIMER1A			, // 13 ** PB 5 ** PWM9, TIMER1A
-		TIMER1B			, // 14 ** PB 6 ** PWM10, TIMER1B
-		TIMER0A			, // 15 ** PB 7 ** PWM11, TIMER0A
-		NOT_ON_TIMER	, // 16 ** PA 0 ** D16
-		NOT_ON_TIMER	, // 17 ** PA 1 ** D17
-		NOT_ON_TIMER	, // 18 ** PA 2 ** D18
-		NOT_ON_TIMER	, // 19 ** PA 3 ** D19
-		NOT_ON_TIMER	, // 20 ** PA 4 ** D20
-		NOT_ON_TIMER	, // 21 ** PA 5 ** D21
-		NOT_ON_TIMER	, // 22 ** PA 6 ** D22
-		NOT_ON_TIMER	, // 23 ** PA 7 ** D23
-		NOT_ON_TIMER	, // 24 ** PC 0 ** D24
-		NOT_ON_TIMER	, // 25 ** PC 1 ** D25
-		NOT_ON_TIMER	, // 26 ** PC 2 ** D26
-		NOT_ON_TIMER	, // 27 ** PC 3 ** D27
-		NOT_ON_TIMER	, // 28 ** PC 4 ** D28
-		NOT_ON_TIMER	, // 29 ** PC 5 ** D29
-		NOT_ON_TIMER	, // 30 ** PC 6 ** D30
-		NOT_ON_TIMER	, // 31 ** PC 7 ** D31
-		NOT_ON_TIMER	, // 32 ** PE 2 ** D32
-		NOT_ON_TIMER	, // 33 ** PE 6 ** D33
-		NOT_ON_TIMER	, // 34 ** PE 7 ** D34
-		NOT_ON_TIMER	, // 35 ** PD 4 ** D35
-		NOT_ON_TIMER	, // 36 ** PD 5 ** D36
-		NOT_ON_TIMER	, // 37 ** PD 6 ** D37
-		NOT_ON_TIMER	, // 38 ** PD 7 ** D38
-		NOT_ON_TIMER	, // 39 ** PG 0 ** D39
-		NOT_ON_TIMER	, // 40 ** PG 1 ** D40
-		NOT_ON_TIMER	, // 41 ** PG 2 ** D41
-		NOT_ON_TIMER	, // 42 ** PG 3 ** D42
-		NOT_ON_TIMER	, // 43 ** PG 4 ** D43
-		NOT_ON_TIMER	, // 44 ** PB 0 ** D44
-		NOT_ON_TIMER	, // 45 ** PB 1 ** D45
-		NOT_ON_TIMER	, // 46 ** PB 2 ** D46
-		NOT_ON_TIMER	, // 47 ** PB 3 ** D47
-		NOT_ON_TIMER	, // 48 ** PF 0 ** A0
-		NOT_ON_TIMER	, // 49 ** PF 1 ** A1
-		NOT_ON_TIMER	, // 50 ** PF 2 ** A2
-		NOT_ON_TIMER	, // 51 ** PF 3 ** A3
-		NOT_ON_TIMER	, // 52 ** PF 4 ** A4
-		NOT_ON_TIMER	, // 53 ** PF 5 ** A5
-		NOT_ON_TIMER	, // 54 ** PF 6 ** A6
-		NOT_ON_TIMER	, // 55 ** PF 7 ** A7
+		TIMER3B			, //  6 ** PE 4 ** PWM6, TIMER3B
+		TIMER3C			, //  7 ** PE 5 ** PWM7, TIMER3C
+		TIMER0B			, //  8 ** PG 5 ** PWM8, TIMER0B
+		TIMER3A			, //  9 ** PE 3 ** PWM9, TIMER3A
+		TIMER2A			, // 10 ** PB 4 ** PWM10, TIMER2A
+		TIMER1A			, // 11 ** PB 5 ** PWM11, TIMER1A
+		TIMER1B			, // 12 ** PB 6 ** PWM12, TIMER1B
+		TIMER0A			, // 13 ** PB 7 ** PWM13, TIMER0A
+		NOT_ON_TIMER	, // 14 ** PA 0 ** D14
+		NOT_ON_TIMER	, // 15 ** PA 1 ** D15
+		NOT_ON_TIMER	, // 16 ** PA 2 ** D16
+		NOT_ON_TIMER	, // 17 ** PA 3 ** D17
+		NOT_ON_TIMER	, // 18 ** PA 4 ** D18
+		NOT_ON_TIMER	, // 19 ** PA 5 ** D19
+		NOT_ON_TIMER	, // 20 ** PA 6 ** D20
+		NOT_ON_TIMER	, // 21 ** PA 7 ** D21
+		NOT_ON_TIMER	, // 22 ** PC 0 ** D22
+		NOT_ON_TIMER	, // 23 ** PC 1 ** D23
+		NOT_ON_TIMER	, // 24 ** PC 2 ** D24
+		NOT_ON_TIMER	, // 25 ** PC 3 ** D25
+		NOT_ON_TIMER	, // 26 ** PC 4 ** D26
+		NOT_ON_TIMER	, // 27 ** PC 5 ** D27
+		NOT_ON_TIMER	, // 28 ** PC 6 ** D28
+		NOT_ON_TIMER	, // 29 ** PC 7 ** D29
+		NOT_ON_TIMER	, // 30 ** PE 2 ** D30
+		NOT_ON_TIMER	, // 31 ** PE 6 ** D31
+		NOT_ON_TIMER	, // 32 ** PE 7 ** D32
+		NOT_ON_TIMER	, // 33 ** PD 4 ** D33
+		NOT_ON_TIMER	, // 34 ** PD 5 ** D34
+		NOT_ON_TIMER	, // 35 ** PD 6 ** D35
+		NOT_ON_TIMER	, // 36 ** PD 7 ** D36
+		NOT_ON_TIMER	, // 37 ** PG 0 ** D37
+		NOT_ON_TIMER	, // 38 ** PG 1 ** D38
+		NOT_ON_TIMER	, // 39 ** PG 2 ** D39
+		NOT_ON_TIMER	, // 40 ** PG 3 ** D40
+		NOT_ON_TIMER	, // 41 ** PG 4 ** D41
+		NOT_ON_TIMER	, // 42 ** PB 0 ** D42
+		NOT_ON_TIMER	, // 43 ** PB 1 ** D43
+		NOT_ON_TIMER	, // 44 ** PB 2 ** D44
+		NOT_ON_TIMER	, // 45 ** PB 3 ** D45
+		NOT_ON_TIMER	, // 46 ** PF 0 ** A0
+		NOT_ON_TIMER	, // 47 ** PF 1 ** A1
+		NOT_ON_TIMER	, // 48 ** PF 2 ** A2
+		NOT_ON_TIMER	, // 49 ** PF 3 ** A3
+		NOT_ON_TIMER	, // 50 ** PF 4 ** A4
+		NOT_ON_TIMER	, // 51 ** PF 5 ** A5
+		NOT_ON_TIMER	, // 52 ** PF 6 ** A6
+		NOT_ON_TIMER	, // 53 ** PF 7 ** A7
 };
 #else
 // these arrays map port names (e.g. port B) to the
