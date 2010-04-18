@@ -203,13 +203,13 @@ platypus: AVR_FREQ = 16000000L
 platypus: LDSECTION  = --section-start=.text=0x1F000
 platypus: $(PROGRAM)_platypus.hex
 
-platypus: mega
-platypus: TARGET = platypus
-platypus: MCU_TARGET = atmega1281
-platypus: HFUSE = DA
-platypus: LFUSE = FF
-platypus: EFUSE = F5
-platypus: isp
+platypus_isp: mega
+platypus_isp: TARGET = platypus
+platypus_isp: MCU_TARGET = atmega1281
+platypus_isp: HFUSE = DA
+platypus_isp: LFUSE = FF
+platypus_isp: EFUSE = F5
+platypus_isp: isp
 
 isp: $(TARGET)
 	$(ISPFUSES)
